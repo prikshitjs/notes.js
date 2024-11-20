@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes app || Prikshit.js</title>
+    <!-- link the external stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link the fontawesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- header start here -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Notes.in</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="https://instagram.com/prikshit.js"><i class="fa-brands fa-instagram"></i></a>
+                    </a></li>
+                    <li><a href="https://github.com/prikshitjs/notes-app.git"><i class="fa-brands fa-github">
+                    </i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- main content -->
+    <main>
+        <div class="notealert">
+            <i class="fa fa-check"></i>
+            <span>Done</span>
+        </div>
+            <button onclick="addNote()" class="addbtn"><i class="fa fa-plus"></i></button>
+            <!-- add notes section -->
+            <div class="addnotes">
+                <div class="form">
+                    <i onclick="removetab()" class="fa fa-xmark"></i>
+                    <h2>Add note</h2>
+                    <textarea id="note-input" placeholder="Write Something..."></textarea>
+                    <button class="savebtn">Add</button>
+                </div>
+            </div>
+            <div class="display_notes">
+                <div class="notebox">
+                    <i onclick="deletenote()" class="fa fa-trash-can" title="Delete this note"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta aperiam optio ipsa perferendis veniam laboriosam esse quasi in provident sunt?</p>
+                </div>
+            </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
